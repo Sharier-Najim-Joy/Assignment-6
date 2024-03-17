@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro</title>
+
+    <!-- tailwind and daisy UI linked -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font Awesome linked -->
+    <script src="https://kit.fontawesome.com/45f7665e19.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts linked -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: "Mulish", sans-serif;
+        }
+        .font-inter{
+          font-family: "Inter", sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="container mx-auto px-2 lg:px-10">
+        <!-- navbar design-->
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a title="Home" class="text-[20px] font-inter font-normal text-base p-4 border-2 rounded-full bg-[#12132D08] text-[#12132D99] hover:text-[#fff] hover:bg-[#797DFC] duration-300" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>
+                </a></li>
+                <li><a title="Pencil" class="text-[20px] font-inter font-normal text-base p-4 border-2 rounded-full bg-[#12132D08] text-[#12132D99] hover:text-[#fff] hover:bg-[#797DFC] duration-300" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                  </svg>                
+                </a></li>
+                <li><a title="Add" class="text-[20px] font-inter font-normal text-base p-4git border-2 rounded-full bg-[#12132D08] text-[#12132D99] hover:text-[#fff] hover:bg-[#797DFC] duration-300" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                  </svg>
+                  
+                </a></li>
+                <li><a title="Flag" class="text-[20px] font-inter font-normal text-base p-4 border-2 rounded-full bg-[#12132D08] text-[#12132D99] hover:text-[#fff] hover:bg-[#797DFC] duration-300" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
+                  </svg>                
+                </a></li>
+              </ul>
+            </div>
+            <a class="font-black text-4xl text-[#12132D]">Retro</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 space-x-5">
+              <li><a title="Home" class="text-[20px] font-inter font-normal text-base p-4 border-2 rounded-full bg-[#12132D08] text-[#12132D99] hover:text-[#fff] hover:bg-[#797DFC] duration-300" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+              </a></li>
+              <li><a title="Pencil" class="text-[20px] font-inter font-normal text-base p-4 border-2 rounded-full bg-[#12132D08] text-[#12132D99] hover:text-[#fff] hover:bg-[#797DFC] duration-300" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                </svg>                
+              </a></li>
+              <li><a title="Add" class="text-[20px] font-inter font-normal text-base p-4 border-2 rounded-full bg-[#12132D08] text-[#12132D99] hover:text-[#fff] hover:bg-[#797DFC] duration-300" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                </svg>
+                
+              </a></li>
+              <li><a title="Flag" class="text-[20px] font-inter font-normal text-base p-4 border-2 rounded-full bg-[#12132D08] text-[#12132D99] hover:text-[#fff] hover:bg-[#797DFC] duration-300" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
+                </svg>                
+              </a></li>
+              
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="text-white text-xl font-bold border-2 border-[#797DFC] bg-[#797DFC] px-8 py-2 rounded-3xl hover:bg-white hover:text-[#797DFC] duration-300">Sign In</a>
+          </div>
+        </div>
+        
+        <!-- banner section  -->
+        <section>
+            <div class="hero md:h-[550px] rounded-3xl mt-16 bg-[url(./images/bgbanner.png)] bg-[#12132D] bg-bottom bg-cover">
+                <div class="hero-content text-center text-neutral-content ">
+                    <div class=" grid grid-flow-row grid-cols-1 md:grid-flow-col lg:grid-cols-2 gap-14 justify-center items-center">
+                        <div class="space-y-8 text-start">
+                          <h1 class="mb-5 text-3xl lg:text-6xl text-white leading-tight font-black">Welcome to the <br> <span class="text-[#7B7FFF]">ReTro</span> Forum</h1>
+                          <p class="mb-5 text-xl font-medium"></p>Share your favorite opinion and win and wp forum coffee mug!</p>
+                          <label class="bg-white p-1 flex items-center justify-between rounded-3xl">
+                            <input id="search-input-field" type="text" class="flex-1 text-black pl-3 p-1 rounded-2xl outline-none" placeholder="Search here anything" />
+                            <button id="search-button" class="bg-[#797DFC] text-white py-2 px-5 rounded-3xl hover:bg-blue-800">Search</button>
+                          </label>
+                        </div>
+                        <div class="bg-white rounded-xl text-black h-fit p-5 font-normal text-xl">
+                            <div class="flex justify-between p-2">
+                                <h3>Registered Users</h3>
+                                <h3>01</h3>
+                            </div>
+                            <div class="flex justify-between p-2">
+                                <h3>Replies</h3>
+                                <h3>05</h3>
+                            </div>
+                            <div class="flex justify-between p-2">
+                                <h3>Topics</h3>
+                                <h3>01</h3>
+                            </div>
+                            <div class="flex justify-between p-2">
+                                <h3>Replies</h3>
+                                <h3>01</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+    </header>
+
+
+    <!-- main -->
+    <main class="container mx-auto px-2 lg:px-10">
+        <!-- Let’s Discuss section -->
+        <section class="my-16">
+            <!-- section title -->
+            <div class="md:w-2/5 mx-auto text-center space-y-4 mb-9">
+                <h1 class="text-4xl font-black text-[#12132D]">Let’s Discuss</h1>
+                <p class="font-inter font-normal text-[#12132D] text-[18px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+
+
+            <!-- loading spinner -->
+            <div id="loading-bar" class="md:w-2/5 mx-auto text-center hidden">
+              <div class="flex justify-center items-center">
+                <span class="loading loading-bars loading-lg text-[#12132D]"></span>
+              </div>
+                
+            </div>
+
+            <!-- Discuss card -->
+            <div class="grid grid-cols-12 lg:gap-8">
+                <div id="category-post-container" class="col-span-12 lg:col-span-8 "></div>
+                
+                <div class="col-span-12 lg:col-span-4  ">
+                    <div class="p-6 bg-[#12132D0D] my-8 rounded-xl">
+                        <div class="flex justify-between mb-6">
+                            <h4 class="text-xl font-bold">Title</h4>
+                            <div class="flex justify-center gap-4 items-center">
+                                <img src="images/icons/Frame (1).svg" alt="">
+                                <h3>Mark as read (<span id="count-title">0</span>)</h3>
+                            </div>
+                        </div>
+                        <!-- title add -->
+                        <div id="title-card-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Join Our Forum -->
+        <section>
+            <div class="hero rounded-xl bg-[#12132D]">
+                <div class="hero-content flex-col lg:flex-row-reverse text-white ">
+                  <img src="images/joinforum.png" class="py-6" />
+                  <div>
+                    <h1 class="text-[40px] font-black text-white">Join Our Forum</h1>
+                    <p class="text-[18px] font-semibold py-6">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app.</p>
+                    <a class="text-white text-xl font-bold border-2 border-[#797DFC] bg-[#797DFC] px-8 py-2 rounded-3xl hover:bg-white hover:text-[#797DFC] duration-300">Registered Now</a>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+        <!-- Latest Posts -->
+        <section class="py-16">
+            <!-- section title -->
+            <div class="md:w-2/5 mx-auto text-center space-y-4 mb-9">
+              <h1 class="text-4xl font-black text-[#12132D]">Latest Posts</h1>
+              <p class="font-inter font-normal text-[#12132D] text-[18px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          </div>
+
+            <!-- cards-->
+            <div id="latest-post-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer footer-center p-10 bg-[#12132D0D] text-black">
+        <aside>
+          <h2 class="font-black text-4xl text-[#12132D] mb-3">ReTro</h2>
+          <p class="text-[#12132DB3] font-normal text-base">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in <br> a piece of classical Latin literature from 45 BC
+          </p> 
+        </aside> 
+        <nav>
+          <div class="grid grid-flow-col gap-8">
+            <a href="" class="hover:-translate-y-1 duration-500"><i class="fa-brands fa-twitter text-2xl text-[#12132D]"></i></a>
+            <a class="hover:-translate-y-1 duration-500" href=""><i class="fa-brands fa-facebook-f text-2xl text-[#12132D]"></i></a>
+            <a class="hover:-translate-y-1 duration-500" href=""><i class="fa-brands fa-instagram text-2xl text-[#12132D]"></i></a>
+            <a class="hover:-translate-y-1 duration-500" href=""><i class="fa-brands fa-github text-2xl text-[#12132D]"></i></a>
+          </div>
+        </nav>
+        <div></div>
+        <p class="border-t-2 border-gray-400 pt-9 w-full">2017, All Rights Reserved.</p>
+    </footer>
+    <script src="JS/spinner.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
